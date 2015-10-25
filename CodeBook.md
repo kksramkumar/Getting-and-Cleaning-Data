@@ -3,7 +3,6 @@ This is a code book that describes the variables, the data, and any transformati
 
 The data source
 
-
 Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Original description of the dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 Data Set Information
@@ -16,21 +15,21 @@ The data
 
 The dataset includes the following files:
 
-'README.txt'
+1.'README.txt'
 
-'features_info.txt': Shows information about the variables used on the feature vector.
+2.'features_info.txt': Shows information about the variables used on the feature vector.
 
-'features.txt': List of all features.
+3.'features.txt': List of all features.
 
-'activity_labels.txt': Links the class labels with their activity name.
+4.'activity_labels.txt': Links the class labels with their activity name.
 
-'train/X_train.txt': Training set.
+5.'train/X_train.txt': Training set.
 
-'train/y_train.txt': Training labels.
+6.'train/y_train.txt': Training labels.
 
-'test/X_test.txt': Test set.
+7.'test/X_test.txt': Test set.
 
-'test/y_test.txt': Test labels.
+8.'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent.
 
@@ -46,12 +45,12 @@ Transformation details
 
 There are 5 parts:
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive activity names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-How run_analysis.R implements the above steps:
+1.Merges the training and the test sets to create one data set.
+2Extracts only the measurements on the mean and standard deviation for each measurement.
+3Uses descriptive activity names to name the activities in the data set
+4.Appropriately labels the data set with descriptive activity names.
+5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+6.How run_analysis.R implements the above steps:
 
 Require reshapre2 and data.table librareis.
 Load both test and train data
